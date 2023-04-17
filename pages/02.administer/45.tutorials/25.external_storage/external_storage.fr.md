@@ -92,6 +92,8 @@ fdisk /dev/VOTRE_DISQUE
 
 puis entrez successivement `n`, `p`, `1`, `Entrée`, `Entrée`, et `w` pour créer une nouvelle partition.
 
+Il est possible que votre table de partition ne vous permettent pas de créer des partitions adaptées à la taille de votre disque (supérieur à 2To pour les table DOS). Dans ce cas il faut changer cette table (pour une table GUID/GPT) en tapant `g`, `p`, `Entrée`, `Entrée`, `Entrée`, et `w` pour créer la nouvelle partition.
+
 Vérifiez avec `lsblk` que vous avez bien votre disque contenant une seule partition.
 
 Avant de pouvoir utiliser votre disque, il doit être formaté.
